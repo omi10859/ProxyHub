@@ -1,8 +1,9 @@
 import uuid
 
 from django.db import models
+from apps.core.models import TimeStampedModel
 
-class ClientKey(models.Model):
+class ClientKey(TimeStampedModel):
 
     key = models.UUIDField(default=uuid.uuid4)
 
