@@ -2,6 +2,11 @@
 
 ProxyHub is a simple, extensible API Gateway built with Django and Django REST Framework (DRF). It authenticates requests using API keys, enforces per-key rate limits using Redis, proxies requests to downstream services, and logs all requests for auditing and analytics.
 
+# Sample URL 
+
+BASE_URL/proxy/`service_name`/`sub_path`
+ex: http://example.com/proxy/service1/search?country=india
+
 ## Features
 
 - **API Key Authentication:** Secure access using unique API keys per client.

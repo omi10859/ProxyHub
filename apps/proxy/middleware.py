@@ -3,7 +3,7 @@ from django.http import JsonResponse
 from django.core.cache import cache
 
 class RateLimitMixin:
-    RATE_LIMIT = 100
+    RATE_LIMIT = 10
     PERIOD = 3600
     API_KEY_HEADER = "X-API-KEY"
 
