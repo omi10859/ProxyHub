@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import ClientKey
 
-# class ClientKeyAdmin(admin.ModelAdmin):
-
-
-admin.site.register(ClientKey)
+@admin.register(ClientKey)
+class ClientKeyAdmin(admin.ModelAdmin):
+    list_display = ('name', 'key')
+    search_fields = ('name', )
